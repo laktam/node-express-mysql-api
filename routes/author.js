@@ -5,7 +5,7 @@ const router = Router();
 
 // Get all users
 router.get('/authors', (req, res) => {
-    Database.select("titles")
+    Database.select("authors")
         .then((result) => {
             const [rows] = result;
             console.log(rows);
